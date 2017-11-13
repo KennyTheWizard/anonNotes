@@ -1,0 +1,16 @@
+<div class="card" id="scrollBox">
+  <div class="card-body">
+    <div class="row" *ngFor="let note of _notes.notesList">
+      <div class="col-sm-12">
+        <div class="card">
+          <div class="card-header">
+            <p class="card-text text-right">{{ note.createdAt | date:'medium'}}</p>
+          </div>
+          <div class="card-body">
+            <p class="card-text">{{ note.text }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
